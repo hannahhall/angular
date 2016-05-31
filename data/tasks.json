@@ -1,0 +1,8 @@
+{
+	"tasks": [
+		{"name": "make the bed", "type":"home"},
+		{"name": "eat food", "type":"home"},
+		{"name": "stuff", "type":"work"},
+		{"name": "things", "type": "work"}
+	]
+}
