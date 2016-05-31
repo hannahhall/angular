@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body ng-app="TodoApp">
+	<section ng-controller="TodoCtrl">
+		<h1>{{title}}</h1>
+		<div>
+			<input type="text" ng-model="potato">
+<!-- 			<input type="checkbox" ng-model= "varName">
+ -->			<div>
+				{{potato}}
+			</div>
+<!-- 			<div>
+				{{varName}}
+			</div> -->
+			<form ng-submit="addTodo()"> <!-- ng-submit on form to use enter key, make sure button is type=submit -->
+				<input type="text" name="" ng-model="newTodo">
+				<button type="submit" class="btn-default" >New Todo</button>
+			</form>
+			<div>
+				<ul ng-repeat="eachItem in tasks | filter: potato">
+					<li>{{eachItem.name}}<button ng-click="removeTodo(eachItem)">Delete</button></li>
+
+				</ul>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/todo.js"></script>
+</body>
+</html>
