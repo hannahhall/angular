@@ -1,0 +1,17 @@
+{
+  "name": "angular",
+  "homepage": "https://github.com/hannahhall/angular",
+  "authors": [
+    "Hannah Hall <hannahkhall13@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
